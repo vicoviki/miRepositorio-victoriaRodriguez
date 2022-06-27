@@ -76,18 +76,22 @@ nav{
 				nav a:hover {
 	 				color: black;
 				}
-					nav a img{
+					nav a img:hover{
 						display:flex;
 						width: auto;
 						height: auto;
 						top: 0.5rem;
+						transform:rotate(360deg);
+						transition: all 2s;
 					}
-		
-}
 
-.header{
+.header:hover{
 	grid-area:header;
 }
+.header img:hover{
+	transform:scale(1.02,1);
+}
+
 img{
 	max-width: 100vw;
 }
@@ -107,7 +111,7 @@ img{
 }
 footer{
 	grid-area:pie;
-	background-image:url(../img/sea.jpg);
+/*	background-image:url(../img/sea.jpg);*/
 	display: flex;
 	justify-content: flex-end;
 	align-content: center;
@@ -117,6 +121,9 @@ footer a img{
 	height: 20%;
 	align-content: center;
 	
+}
+.gradient{
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,81,121,1) 30%, rgba(0,212,255,0.0844712885154062) 84%);
 }
 
 /*------------comienzo media queri tablet-------------*/
